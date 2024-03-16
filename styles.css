@@ -1,0 +1,98 @@
+:root {
+  /* Primary*/
+
+  --Very-darkblue: hsl(233, 47%, 7%); /* (main background) */
+  --Darkdesaturated-blue: hsl(244, 38%, 16%); /* (card background) */
+  --Soft-violet: hsl(277, 64%, 61%); /* (accent) */
+
+  /* Neutral */
+
+  --White: hsl(0, 0%, 100%); /*  (main heading, stats) */
+  --Slightly-transparent-whitee: hsla(
+    0,
+    0%,
+    100%,
+    0.75
+  ); /*   (main paragraph) */
+  --Slightly-transparent-white: hsla(0, 0%, 100%, 0.6); /*  (stat headings)  */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", "Lexend Deca", sans-serif;
+  background-color: var(--Very-darkblue);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  background-color: var(--Darkdesaturated-blue);
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 65rem;
+  border-radius: 10px;
+}
+.text-side {
+  padding: 5rem;
+  width: 50%;
+}
+.title {
+  color: var(--White);
+  font-size: 1.8rem;
+}
+.highlight {
+  color: var(--Soft-violet);
+}
+
+.description {
+  color: var(--Slightly-transparent-whitee);
+  margin-top: 2.5rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--White);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 3rem;
+}
+.stat-description {
+  color: var(--Slightly-transparent-white);
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.image-side {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.meeting-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  object-fit: cover;
+}
+/* .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--Soft-violet);
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0.5;
+} */
