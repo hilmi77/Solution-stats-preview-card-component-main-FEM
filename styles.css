@@ -32,7 +32,6 @@ body {
 }
 .content {
   background-color: var(--Darkdesaturated-blue);
-
   display: flex;
   flex-direction: row;
   justify-content: center;
